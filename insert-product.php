@@ -21,7 +21,7 @@
       echo $u=$row['id'];
   
 
-    		if ($_SESSION['username']==$u ) {?>
+    		if ($_SESSION['username']==$u  ) {?>
 		
 	
 	<div class="container padding">
@@ -118,7 +118,7 @@
 									$cat=$_POST['cat'];
 									$price=$_POST['price'];
 									$discription=$_POST['discription'];
-									
+									$posterid=$_SESSION['username'];
 									
 									
 									$image_tmp=$_FILES['file_img']['tmp_name'];
@@ -127,7 +127,7 @@
 									$imagepath="product-img/".$image;
 									move_uploaded_file($image_tmp,$imagepath);
 
-									if(mysqli_query($link,"insert into product(name,category,img,price,cat,discription) value('$name','$category','$image','$price','$cat','$discription')"))
+									if(mysqli_query($link,"insert into product(name,category,img,price,cat,discription,posterid) value('$name','$category','$image','$price','$cat','$discription','$posterid')"))
 									{
 										echo "<script>alert('Data saved')</script>";
 									}   

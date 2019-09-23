@@ -221,7 +221,7 @@
 									
 								</div>";?>
 								<figcaption class='info-wrap'>
-									<?php echo"<h6 class='title text-dots'><a href='#'>$name</a></h6>";?>
+								<a href='b.php?product=<?php echo $id;?>'><?php echo"<h6 class='title text-dots'>$name</a></h6>";?>
 									<div class='action-wrap'>
 										<a href='b.php?product=<?php echo $id;?>' class='btn btn-primary btn-sm float-right'> Order </a>
 										<div class='price-wrap h6'>
@@ -250,7 +250,7 @@
 <div class="container-fluid padding">
 	<div class="row welcome text-center">
 		<div class="col-12">
-			<h1 class="display-4">Clothes</h1>
+			<h1 class="display-4">Freelancers</h1>
 		</div>
 		<hr>
 		<div class="col-12"><p class="lead">Welcome to my website</p></div>

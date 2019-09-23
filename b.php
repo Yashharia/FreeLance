@@ -42,6 +42,7 @@
 								$name=$row['name'];
 								$img=$row['img'];
 								$price=$row['price'];
+								$discription=$row['discription'];
 
 						?>
 						<form id="form1" name="form1" method="post" action="newcart.php">	
@@ -80,7 +81,7 @@
 ?> <!-- price-detail-wrap .// -->
 <dl class="item-property">
   <dt>Description</dt>
-  <dd><p>Good Quality Ranges Best color available with best material </p></dd>
+  <dd><p><?php echo $discription;?></p></dd>
 </dl>
  <!-- item-property-hor .// -->
 <dl class="param param-feature">

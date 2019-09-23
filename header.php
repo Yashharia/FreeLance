@@ -52,13 +52,14 @@
       
 
       <?php
+	  echo $_SESSION['username'];
       if(isset($_SESSION['username'])){
       $q="select * from users";
     	$run=mysqli_query($link,$q);
     	while($row=mysqli_fetch_array($run)){
     # code...
         $u=$row['id'];
-        echo $_SESSION['username'];
+        $_SESSION['username'];
   
 
     		if ($_SESSION['username']==$u ) {?>
@@ -69,12 +70,22 @@
         </a>
       </li>
       <li class="nav-item ">
-        <a class="nav-link" href="orders.php" role="button" >
+        <a class="nav-link" href="deleteproduct.php" role="button" >
           Your ads
         </a>
       </li>
   <?php }
-      }
+		}
+  if ($_SESSION['username']=='admin' ) {?>
+<li class="nav-item ">
+        <a class="nav-link" href="deleteallproduct.php" role="button" >
+          all ads
+        </a>
+      </li>
+  <?php
+  }
+  
+      
 }
   ?>
 

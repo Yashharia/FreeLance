@@ -30,13 +30,13 @@
   <!-- The slideshow -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="./images/clothes2.jpg" alt="Los Angeles">
+      <img src="./images/mens.jpg" alt="Los Angeles">
     </div>
     <div class="carousel-item">
-      <img src="./images/clothes3.jpg" alt="Chicago">
+      <img src="./images/mens.jpg" alt="Chicago">
     </div>
     <div class="carousel-item">
-      <img src="./images/clothes2.jpg" alt="New York">
+      <img src="./images/mens.jpg" alt="New York">
     </div>
   </div>
 
@@ -79,7 +79,7 @@
 <!--gird--><!--Right side-->
 				<figure>
 				<div class="col-sm-5">
-					<a href="lookforjobs.php"><img class="center img-responsive" src="./images/mens.jpg"></a>
+					<a href="lookforjobs.php"><img class="center img-responsive" src="./images/clothes2.jpg"></a>
 					<div class="carousel-caption">
 					<h6 class="display-2">Freelancers</h6>
 				</div>

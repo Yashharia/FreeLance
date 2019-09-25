@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.2
+-- version 4.9.0.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 01, 2019 at 06:52 PM
--- Server version: 10.1.34-MariaDB
--- PHP Version: 5.6.37
+-- Generation Time: Sep 25, 2019 at 11:53 AM
+-- Server version: 10.4.6-MariaDB
+-- PHP Version: 7.3.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -99,16 +99,16 @@ CREATE TABLE `product` (
   `img` varchar(100) NOT NULL,
   `price` int(11) NOT NULL,
   `cat` varchar(10) NOT NULL,
-  `stock` int(11) NOT NULL
+  `discription` varchar(300) NOT NULL,
+  `posterid` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `product`
 --
 
-INSERT INTO `product` (`id`, `name`, `category`, `img`, `price`, `cat`, `stock`) VALUES
-(29, 'tshirt', 'tshirt', 'pocket tshirt.jpg', 350, 'Women', 2),
-(30, 'capry', 'Shorts-womens', 'capry.jpg', 320, 'Women', 4);
+INSERT INTO `product` (`id`, `name`, `category`, `img`, `price`, `cat`, `discription`, `posterid`) VALUES
+(31, 'video editor', 'editor', 'clothes3.jpg', 500, 'Freelancer', '', 0);
 
 -- --------------------------------------------------------
 
@@ -195,7 +195,7 @@ ALTER TABLE `checkout`
 -- AUTO_INCREMENT for table `product`
 --
 ALTER TABLE `product`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
 
 --
 -- AUTO_INCREMENT for table `users`
